@@ -14,7 +14,7 @@ Moved to Enschede, Netherlands in March 2020 as part of placement studies and fi
 AI, ML, Gaming, Live Streaming, Art, Game Development (programming)
 
 ## Experience with following programming languages (ordered by most recently used)
-Python, Java, C#, C/C++ (including OpenGL, MATLAB, HTML, CSS, JavaScript, PHP, MySQL
+Python, Java, C#, C/C++ (including OpenGL), MATLAB, HTML, CSS, JavaScript, PHP, MySQL
 
 ### Additional experience with
 Unity, Blender
