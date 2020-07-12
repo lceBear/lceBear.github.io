@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+# Mikael 'lcebear' Lundell Vinkler
+<img src="https://scontent-amt2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/73512657_237847357204974_1177511743869306577_n.jpg?_nc_ht=scontent-amt2-1.cdninstagram.com&_nc_cat=106&_nc_ohc=Uu2I-4EWzG4AX8H5Btx&oh=c753b9c6c7624b6e4215683f80b313eb&oe=5F34B659" alt="Ant-Man" width="200"/>
 
-You can use the [editor on GitHub](https://github.com/lcebear/lcebear.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## Education
+Born 1996 in a small town (or village) in Sweden called Smedjebacken. 
+Moved to Norrköping in 2015 to study Master of Science in Media Technology and Engineering at Linköping University (LiU). 
+Applied and got accepted for 5 months of exchange studies at Tokyo Institute of Technology, spring semester of 2019. 
+Came back to Linköping University in September of 2019 to start the final year of the master program. 
+Moved to Enschede, Netherlands in March 2020 as part of placement studies and final Master Thesis at University of Twente.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Ongoing Thesis work**: _Conversational agents with memory based answer generation_
 
-### Markdown
+## Interests
+AI, ML, Gaming, Live Streaming, Art, Game Development (programming)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Experience with following programming languages (ordered by most recently used)
+Python, Java, C#, C/C++ (including OpenGL, MATLAB, HTML, CSS, JavaScript, PHP, MySQL
 
-```markdown
-Syntax highlighted code block
+### Additional experience with
+Unity, Blender
 
-# Header 1
-## Header 2
-### Header 3
+## Most relevant (AI/Programming) courses completed
+Artificial Intelligence 2x (1. Introduction, 2. Advanced), Machine Learning 2x (1. @Tokyo Tech, 2. ML for Social Media @LiU), Concurrent Programming and Operating Systems, Distributed Systems, Distributed Algorithms, Parallel Computing, Network Programming and Security, Design and Programming of Computer Games
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lcebear/lcebear.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Contact
+E-mail: mikvi575@student.liu.se
