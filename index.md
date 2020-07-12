@@ -23,4 +23,4 @@ Unity, Blender
 Artificial Intelligence 2x (1. Introduction, 2. Advanced), Machine Learning 2x (1. @Tokyo Tech, 2. ML for Social Media @LiU), Concurrent Programming and Operating Systems, Distributed Systems, Distributed Algorithms, Parallel Computing, Network Programming and Security, Design and Programming of Computer Games
 
 ### Contact
-E-mail: mikvi575@student.liu.se
+E-mail: <a href = "mailto: mikvi575@student.liu.se"/>
