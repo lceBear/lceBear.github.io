@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#mainContent p {
+    margin-bottom: 1em;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #606c71;
+
+}
+
+#mainContent {
+  margin: auto;
+  width: 70%;
+}
+
+#mainContent h1, h2, h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: #159957;
+}
+
+#header {
+	margin: 0;
+	padding: 0;
+    color: #fff;
+    text-align: center;
+    background-color: #8d1599;
+    background-image: linear-gradient(120deg, #1d1599, #8d1599);
+	height: 200px;
+}
+#header h1 {
+	margin-bottom: 2rem;
+	padding: 1rem;
+}
+
+#urlbutton {
+	padding: 1rem;
+	margin: 1rem;
+	color: white;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#urlbutton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#myBtnContainer{
+	margin-top: 1rem;
+	
+}
+
+.projContainer {
+	margin-top: 1rem;
+	
+}
+
+.projTitle {
+	color: #159957;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+
+	
+}
+
+.leftContainer {
+	width: 60%;
+	float: left;
+	
+}
+
+.projCont {
+	float: none;
+	margin: 0;
+	padding: 0;	
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.rightContainer{
+	float:right;
+	width: 40%;
+	height: 100%;
+	padding-left: 2rem;
+}
+
+
+.filterDiv {
+	
+	padding: 1rem;
+	border-bottom: 1px solid rgb(10,10,10);
+	border-top: 1px solid rgb(10,10,10);
+	overflow:hidden;
+	width: 100%;
+	float: left;
+	color: rgb(0,0,120);
+	display: none; /* Hidden by default */
+}
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  display: inline-block;
+  width: 6rem;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #666;
+  cursor: pointer;
+  color: white;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #1d1599;
+}
+
+/* Add a dark background to the active button */
+.btn.activeBtn {
+  background-color: #8d1599;
+  
+}
+
+
+.col-md-3{
+  display: inline-block;
+  margin-left:-4px;
+}
+.col-md-3 img{
+  width:100%;
+  height:auto;
+}
+body .carousel-indicators li{
+  background-color:purple;
+}
+body .carousel-indicators{
+  bottom: 0;
+}
+body .carousel-control-prev-icon,
+body .carousel-control-next-icon{
+  background-color:purple;
+}
+body .no-padding{
+  padding-left: 0;
+  padding-right: 0;
+   }
+
+

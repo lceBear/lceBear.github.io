@@ -1,29 +1,242 @@
 
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-
-    
-    <meta charset="UTF-8">
-
-
-<title>lceBear’s homepage</title>
-
-
-    <link rel="stylesheet" href="/assets/css/style.css">
+ <head>   
+	<meta charset="UTF-8">
+	<title>lceBear’s Portfolio</title>
+	<style type="text/css">
+	@import url(./assets/css/style.css);
+	</style>
   </head>
   <body>
-    <header>
-      <h1 class="project-name">Mikael ‘lcebear’ Lundell Vinkler</h1>
-      <h2 class="project-tagline">Portfolio of past projects</h2>
-      <a href="/index" id="urlbutton">About me</a>
-      <a href="/projects"id="urlbutton">Projects</a>
-      
-      
-    </header>
+	<div id="header">    
+	  <h1>Portfolio</h1>
+      <a href="./index.html" id="urlbutton">About me</a>
+      <a href="./projects.html"id="urlbutton">Projects</a> 
+	</div>
 
-    <main id="content" class="main-content" role="main">
-    Insert content here :)
-    </main>
+    <div id="mainContent">
+		
+	<!-- Control buttons -->
+	<div id="myBtnContainer">
+	  <button class="btn activeBtn" onclick="filterSelection('all')"> Show all</button>
+	  <button class="btn" onclick="filterSelection('game')"> Games</button>
+	  <button class="btn" onclick="filterSelection('ai')"> AI</button>
+	  <button class="btn" onclick="filterSelection('misc')"> Misc.</button>
+	</div>	
+		
+		
+	  <div class="projContainer">
+		  <div class="filterDiv ai">
+			<div class="leftContainer"> 
+				<div class="projTitle">DialogueMemoryBot</div>
+				<div class="projCont">
+				<b>Year:</b> 2020 </br> <b>Language(s):</b> Python
+				<p>An important aspect of building rapport in human-to-human interaction is the existence of memory. Using memory in chatbots was chosen as a research topic for the sake of contributing toward the development of chatbots with long-term engagingness. I worked with question answering (self-disclosure) with long-term and short-term memory for a social chatbot.
+The chatbot is focused on a limited domain, e.g getting to know someone for the first time.	It consist of template, retrieval and generative componenents. The template component is used for consistently answering questions regarding preference, "What do you think about apples?", "What is your favorite sport?".
+The retrieval component contains some common questions and answers asked when getting to know someone.
+The generative component is used to handle any remaining question by over-generating candidate responses with GPT-2 and then performing ranking to find the most suitable answer.and a generative component using GPT-2.
+The question answering agent was made available as a callable API to be used with a memory based question asking agent, made by a colleague.			</p>
+				</div>
+			</div>
+			<div class="rightContainer">
+			<figure>
+<iframe width="100%" height="250px" src="https://drive.google.com/file/d/1_PKkD75u5arj2pigQ0xMuV8oIylVzEhC/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>			
+<figcaption>Example agent interaction (3x speed-up)</figcaption>
+			</figure></div>
+	
+		  </div>	  
+		  <div class="filterDiv ai">
+			<div class="leftContainer"> 
+				<div class="projTitle">Boids - Blender plugin</div>
+				<div class="projCont">
+				<b>Year:</b> 2019 </br> <b>Language(s):</b> Python 
+				<p>A simple flocking tool/plugin was created for Blender by using the Boids algorithm (separation, alignment cohesion). The tool allows for using your own model as the boid, spawning N number of boids, adjusting the parameters affecting the flocking behavior, telling the boids to follow a 3D curve (path), and spawning predators.</p>
+				</div>
+			</div>
+			<div class="rightContainer">
+			<figure>
+			  <img src="./assets/media/flocking-tool.gif" alt="Tetris" style="width:100%">
+			  <figcaption>Boids in Blender</figcaption>
+			</figure></div>
+
+		  </div>
+		  <div class="filterDiv ai">
+		    <div class="projTitle"></div>
+				<div class="leftContainer"> 
+				<div class="projTitle">Simulated Rocket Landing by AI</div>
+				<div class="projCont">
+				<b>Year:</b> 2019 </br> <b>Language(s):</b> C# 
+				<p>An AI (Fully connected neural network, 9 input layers, 2 output layers) was taught how to safely land a rocket on random terrains by the help of genetic algorithms. The project was made with Unity. A group of agents act in the environment with randomly initialized weights. A fitness function calculates a score that determines which agents are performing the best, based on desired behavior, e.g staying upright and moving toward the goal. Then a new generation of agents are created by crossover. Each new agent is created by considering/taking weights from two parent agents (e.g 2 of the best performing agents). Then random mutation is performed and the new population act on the environment. This process is repeated until the AI learns the behavior that result in a maximized fitness score, e.g landing safely. The agent gets 9 inputs every 0.02 seconds that helps it decide whether it should activate any or both rocket thrusters.
+</div>
+			</div>
+			<div class="rightContainer">
+						<figure>
+<iframe width="100%" height="250px" src="https://drive.google.com/file/d/1Wsb4_HXpcdjU_sFuMxWsu0MIX8kHOc4R/preview" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>			
+			  <figcaption>Illustrating the training phase and the trained agent</figcaption>
+			</figure>	
+</div>
+
+		  </div>
+		  <div class="filterDiv misc">
+			
+					    <div class="projTitle"></div>
+				<div class="leftContainer"> 
+				<div class="projTitle">Procedural Fire&amp;Smoke </div>
+				<div class="projCont">
+				<b>Year:</b> 2018 </br> <b>Language(s):</b> C++ / OpenGL / shader programming 
+				<p>An attempt was made at procedurally generating fire and smoke by using perlin noise in openGL. This was done by generating perlin noise in different scales and animating it, applying masks such that noise values below a threshold gets a certain color. The flame in focus is built up by three different scaled noises, the biggest being the main flame, the second one being flares, the third one attempting to simulate minor flame particles. An additional noise was used to try to create individual dancing flames within the main flame, by subtracting parts from it. </p></div>
+			</div>
+			<div class="rightContainer">
+			<figure>
+			  <img src="./assets/media/procedural fire.gif" alt="Tetris" style="width:100%">
+			  <figcaption>Animated Procedural Fire&amp;Smoke</figcaption>
+			</figure>		</div>
+			</div>
+		  <div class="filterDiv ai game">
+			
+						<div class="leftContainer"> 
+			<div class="projTitle">AI Puzzle Game</div>
+				<div class="projCont">
+				<b>Year:</b> 2018 </br> <b>Language(s):</b> C# 
+				<p>A short project where the base mechanics of a puzzle game with AI agents was developed. The puzzle concept is dragging boxes onto platforms to open doors. It consist of three agent types: troublemaker, follower and guard. The troublemaker will drag boxes off of platforms when no one sees. The follower counteracts the troublemaker by acting as a supervisor. The guard patrols an area and will chase trespassers. More levels need to be designed and some mechanics need to be tweaked before it can be released. Project currently on hold.</p></div>
+			</div>
+			<div class="rightContainer">
+			<figure>
+			  <img src="./assets/media/aipuzzle.gif" alt="Tetris" style="width:100%">
+			  <figcaption>AI Puzzle - Troublemaker illustration</figcaption>
+			</figure>		
+</div>
+			</div>
+		  <div class="filterDiv game">
+			<div class="leftContainer"> 
+			<div class="projTitle">Arts of the Elementalists
+			</div>
+				<div class="projCont">
+				<b>Year:</b> 2018 </br> <b>Language(s):</b> C# 
+				<p>The game revolves around the four elements where the main character will have to find each master of each element to learn them all. Enemies are of different elements as well, and the damage dealt to them depend on the element that the player is using. The game was developed as part of a course called "Design and Programming of Computer Games", and as such the focus was on designing progression and feedback rather than creating a finished product.</p></div>
+			</div>
+			<div class="rightContainer">
+			<figure>
+<iframe width="100%" height="250px" src="https://www.youtube.com/embed/AgIR4SeZ3E8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>			
+			  <figcaption>Arts of the Elementalists demo</figcaption>
+			</figure>	
+</div>
+			</div>
+		  <div class="filterDiv game">
+
+																	  <div class="leftContainer"> 
+			<div class="projTitle">Gorilla Fighters
+			</div>
+				<div class="projCont">
+				<b>Year:</b> 2018 </br> <b>Language(s):</b> C# 
+				<p>Temporary Name: Mobile Super Smash Bros </br>
+Summer of 2018 I felt like creating a game. I decided to do a super smash bros like game for mobiles by myself. The task consisted of 3D modeling, animating, network programming and programming mechanics. The project was a bit too much work and was put on hold indefinitely.</p></div>
+			</div>
+			<div class="rightContainer">
+			<figure>
+			  <img src="./assets/media/mssb.gif" alt="Tetris" style="width:100%">
+			  <figcaption>Gorilla Fighters demo</figcaption>
+			</figure>
+</div>
+			</div>
+		  <div class="filterDiv game">
+			
+														  <div class="leftContainer"> 
+<div class="projTitle">Animal Approach
+			</div>
+				<div class="projCont">
+				<b>Year:</b> 2018 </br> <b>Language(s):</b> C# 
+				<p>The task was to create a social game where people had to physically move around (a desk) to play it. Our group developed a capture the flag type AR game using Vuforia and Unity. The game consists of 4 animal characters with each their own unique ability and passive. Each character also had the ability to steal a flag when close enough. My role was mainly programming game mechanics and everything network related.</p></div>
+			</div>
+			<div class="rightContainer">
+			<figure>
+<iframe src="https://drive.google.com/file/d/1_0OnYmRoDL5ZBsmOQrfqMte6gx_3-ILQ/preview" width="100%" height="200px" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+			  <figcaption>Animal Approach (swedish) trailer</figcaption>
+			</figure>			
+</div>
+			</div>
+		  <div class="filterDiv misc">
+				<div class="leftContainer"> 
+				<div class="projTitle">Pocketwatch Gear Simulation </div>
+				<div class="projCont">
+				<b>Year:</b> 2018 </br> <b>Language(s):</b> C++ / OpenGL 
+				<p> Gears in a pocket watch was simulated in OpenGL by calculating the forces that impacts each gear (driving forces and breaking forces). A publicly available 3D modeled pocket watch was found and used. Main part of the work was calculating the ODE and then using Euler method to calculate velocity. With the velocity, an angle could be found which could then be used to calculate how much each gear should rotate. The gears then rotate and as a whole represent an accurate clock running in real time. Some simplifications were made such as an arbitrary friction constant and that the driving force is constant. </p></div>
+			</div>
+			<div class="rightContainer">
+			<figure>
+<iframe src="https://drive.google.com/file/d/1xlVSb4vyNanudWvd45SXwoVuzf4n31So/preview" width="100%" height="300px" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			  <figcaption>Pocketwatch gear simulation</figcaption>
+			</figure>	
+</div>
+			</div>
+		  <div class="filterDiv game">
+			
+											  <div class="leftContainer"> 
+<div class="projTitle">Grow Up
+			</div>
+				<div class="projCont">
+				<b>Year:</b> 2016 </br> <b>Language(s):</b> C# 
+				<p>The game is a runner type for android which was made in Unity for a course in 'Communication and User Interfaces'. Concept of the game was for the character to start as a baby and go through different stages as it grew up: kid, teenager, adult, middle aged and senior. Due to the scope of the course, only the baby stage was implemented. 
+My main role was that of programming the game mechanics, while others worked with art and game design.</p></div>
+			</div>
+			<div class="rightContainer">
+			<figure>
+			  <img src="./assets/media/grow-up-gameplay.gif" alt="Tetris" style="width:100%">
+			  <figcaption>Sped-up Grow Up gameplay</figcaption>
+			</figure>		
+</div>
+			</div>
+			
+		  <div class="filterDiv game">
+			
+								  <div class="leftContainer"> 
+<div class="projTitle">Link: Lost in Mario World
+			</div>
+				<div class="projCont">
+				<b>Year:</b> 2015 </br> <b>Language(s):</b> JavaScript, HTML5 
+				<p>Made with HTML5 and JavaScript, it was a mario type game hosted on the web server provided by the gymnasium. The game had goombas, high-score and animations (using publicly available sprite-sheets). By using AJAX, high-scores were updated in real time. The project was part of the final work of gymnasium, 2015. It was quite challenging to program everything from scratch, by just using the canvas element of HTML5, especially the collision detection. The resulting game was a bit laggy with the collision detection being calculated on every unit. </p></div>
+			</div>
+			<div class="rightContainer">
+			<figure>
+			  <img src="./assets/media/llimw-gameplay.gif" alt="Tetris" style="width:100%">
+			  <figcaption>Link: Lost in Mario World gameplay</figcaption>
+			</figure>		
+</div>
+			</div>
+		  <div class="filterDiv misc">
+		  <div class="leftContainer"> 
+				<div class="projTitle">Forum - Web Server Programming
+			</div>
+				<div class="projCont">
+				<b>Year:</b> 2015 </br> <b>Language(s):</b> PHP, MySQL, CSS 
+				<p> Forum - Web server programming course </br> For the final project in this course I created a forum with PHP and MySQL. The forum allowed for creating threads, in each thread users could create their own subthreads. On each subthread users could comment, cite others and edit their own comments. Threads could be deleted by the creator or by admin type users. It allowed for registration and login, but no user customization. The MySQL tables were kept in a database provided by the gymnasium and are since then lost.</p></div>
+			</div>
+			<div class="rightContainer">
+</div>
+			
+			</div>
+		  <div class="filterDiv game">
+			
+					  <div class="leftContainer"> 
+<div class="projTitle">Tetris
+			</div>
+				<div class="projCont">
+				<b>Year:</b> 2014 </br> <b>Language(s):</b> C++ 
+				<p>As a final project for the introductory programming course in 2014, we got to freely choose our own projects. I chose tetris as a challenge as I had heard no previous student of the teacher had succeeded so far. I created the basics of it in a very hard-coded manner with a lot of repeated code.</p></div>
+			</div>
+			<div class="rightContainer">
+			<figure>
+			  <img src="./assets/media/tetris-gameplay.gif" alt="Tetris" style="width:100%">
+			  <figcaption>Sped-up Tetris gameplay</figcaption>
+			</figure>
+			
+			
+</div>
+			</div>
+	  </div>	
+    </div>
+	<script src="script.js"></script>
   </body>
 </html>
